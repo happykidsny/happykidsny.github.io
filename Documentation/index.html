@@ -1,0 +1,1055 @@
+<!doctype html>
+<!--[if IE 6 ]>
+<html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>
+<html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <title>Daycare - Responsive HTML5/CSS Template</title>
+
+    <meta name="description" content="Thank you for purchasing this theme. If you have any questions that are beyond the scope of this help file, please feel free to email via the user page contact form. Thanks so much!">
+    <meta name="author" content="ThemePlayers">
+    <meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+
+
+    <link type="text/css" rel="stylesheet" href="syntaxh/css/shCoreDefault.css">
+    <link rel="stylesheet" href="css/documenter_style.css" media="all">
+
+
+    <script src="js/jquery.1.6.4.js"></script>
+
+    <script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+    <script src="js/jquery.easing.js"></script>
+
+
+    <script>document.createElement('section');
+    var duration = 500, easing = 'swing';</script>
+    <script src="js/script.js"></script>
+
+
+    <style>
+        html { background-color: #FFFFFF; color: #383838; }
+        ::-moz-selection { background: #444444; color: #DDDDDD; }
+        ::selection { background: #444444; color: #DDDDDD; }
+        #documenter_sidebar #documenter_logo { background-image: url(); }
+        a { color: #0000FF; }
+        hr { border-top: 1px solid #EBEBEB; border-bottom: 1px solid #FFFFFF; }
+        #documenter_sidebar, #documenter_sidebar ol a { background-color: #DDDDDD; color: #222222; }
+        #documenter_sidebar ol a { -webkit-text-shadow: 1px 1px 0px #EEEEEE; -moz-text-shadow: 1px 1px 0px #EEEEEE; text-shadow: 1px 1px 0px #EEEEEE; }
+        #documenter_sidebar ol { border-top: 1px solid #AAAAAA; }
+        #documenter_sidebar ol a { border-top: 1px solid #EEEEEE; border-bottom: 1px solid #AAAAAA; color: #444444; }
+        #documenter_sidebar ol a:hover { background: #444444; color: #DDDDDD; border-top: 1px solid #444444; }
+        #documenter_sidebar ol a.current { background: #444444; color: #DDDDDD; border-top: 1px solid #444444; }
+        #documenter_copyright { display: block !important; visibility: visible !important; }
+    </style>
+
+    <style>
+        .patEl { float: left; width: 120px; font-size: 10px; line-height: 11px; margin-bottom: 10px; }
+        .patEl img { margin: 2px 0; }
+        .clear {
+            clear: both;
+            height: 0;
+            overflow: hidden;
+        }
+        img {
+            border: 1px solid #ccc;
+            border: 1px solid rgba(0, 0, 0, .4);
+        }
+    </style>
+
+</head>
+<body>
+<div id="documenter_sidebar">
+    <a href="#documenter_cover" id="documenter_logo"></a>
+    <ol id="documenter_nav">
+        <li><a class="current" href="#documenter_cover">Start</a></li>
+        <li><a href="#html_structure">HTML Structure</a></li>
+        <li><a href="#css_files_structure">CSS Files & Structure</a></li>
+        <li><a href="#java_script">Java Script</a></li>
+        <li><a href="#typography">Typography</a></li>
+        <li><a href="#contact_form">Contact Form / Newsletter</a></li>
+        <li><a href="#twitter">Twitter settings</a></li>
+        <li><a href="#sources_credits">Sources & Credits</a></li>
+
+    </ol>
+    <div id="documenter_copyright">Copyright ThemePlayers<br>
+        made with the <a href="http://rxa.li/documenter">Documenter v1.6</a>
+    </div>
+</div>
+<div id="documenter_content">
+<section id="documenter_cover"><h1>Daycare</h1>
+
+    <h2>Responsive HTML/CSS Template</h2>
+    <hr>
+    <ul>
+        <li>Created: May 15, 2014</li>
+        <li>latest Update: May 15, 2014</li>
+        <li>By: ThemePlayers</li>
+        <li>Email: <a href="mailto:support@themeplayers.net">support@themeplayers.net</a>
+        </li>
+    </ul>
+    <p>Thank you for purchasing this theme. If you have any questions that are beyond the scope of this help file, please visit <a href="http://createit.support">our support forum</a>.
+        Thanks so much!</p>
+
+
+</section>
+<section id="html_structure">
+
+
+<h2 id="structure" class="section-title">HTML Structure</h2>
+
+
+<p>
+    This theme is built upon bootstrap framework and is fully responsive. It adapts to window resolution and looks good on all devices including ipad and iphone.<br>
+    See for yourself (resize your browser).</p>
+
+<div style="padding:20px; width:350px; background:#ddd; text-align:center; ">
+    If you would like to read more <br>about bootstrap framework click here :<br><br>
+    <a href="http://getbootstrap.com/" style="font-size:16px; font-weight:bold; color:#000;">Bootstrap Documentation</a>
+</div>
+
+<div class="subChapter">
+
+
+<h5>Main menu and Site Logo</h5>
+
+<p>Main menu is fix to the top of the viewport and include support for a site logo and dropdown menu.<br>
+    Bootstrap implements responsive menu - for example: on ipad and iphone it will be shown after click (resize your browser and see yourself).
+</p>
+
+
+ <pre class="brush: html">
+   &lt;nav class="navbar navbar-default yamm" role="navigation">
+       &lt;div class="container">
+           &lt;div class="sun rotate">
+               &lt;img src="../assets/images/sun.png" alt="">
+           &lt;/div>
+           &lt;!-- Brand and toggle get grouped for better mobile display -->
+           &lt;div class="navbar-header">
+               &lt;button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                   &lt;span class="sr-only">Toggle navigation&lt;/span>
+                   &lt;span class="icon-bar">&lt;/span>
+                   &lt;span class="icon-bar">&lt;/span>
+                   &lt;span class="icon-bar">&lt;/span>
+               &lt;/button>
+               &lt;a class="navbar-brand" href="#">&lt;img src="../assets/images/logo.png" alt="Logo Sunny Daycare"> &lt;/a>
+           &lt;/div>
+
+           &lt;!-- Collect the nav links, forms, and other content for toggling -->
+           &lt;div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               &lt;ul class="nav navbar-nav navbar-right">
+                   &lt;li class="dropdown active">
+                       &lt;a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home&lt;/a>
+                       &lt;ul class="dropdown-menu">
+                           &lt;li class="active">&lt;a href="index.html">Home 1&lt;/a>&lt;/li>
+                           &lt;li>&lt;a href="index2.html">Home 2&lt;/a>&lt;/li>
+                       &lt;/ul>
+                   &lt;/li>
+                   &lt;li class="dropdown">
+                       &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown">About us&lt;/a>
+                       &lt;ul class="dropdown-menu">
+                           &lt;li>&lt;a href="whyus.html">Why Sunny Daycare&lt;/a>&lt;/li>
+                           &lt;li>&lt;a href="history.html">History&lt;/a>&lt;/li>
+                           &lt;li>&lt;a href="staff.html">Our Staff&lt;/a>&lt;/li>
+                           &lt;li>&lt;a href="testimonials.html">Parent's Testimonials&lt;/a>&lt;/li>
+                           &lt;li class="dropdown-submenu">
+                               &lt;a href="#">What's happening&lt;/a>
+                               &lt;ul class="dropdown-menu">
+                                   &lt;li>&lt;a href="nutritions.html">Health and Nutritions&lt;/a>&lt;/li>
+                                   &lt;li>&lt;a href="activities.html">Fitness and activities&lt;/a>&lt;/li>
+                                   &lt;li>&lt;a href="gallery.html">Classrooms&lt;/a>&lt;/li>
+                                   &lt;li>&lt;a href="#">Special events&lt;/a>&lt;/li>
+                                   &lt;li>&lt;a href="blog.html">General News&lt;/a>&lt;/li>
+                               &lt;/ul>
+                           &lt;/li>
+                       &lt;/ul>
+                   &lt;/li>
+                   &lt;li class="dropdown yamm-fw">&lt;a href="programs.html" data-toggle="dropdown" class="dropdown-toggle">Programs&lt;/a>
+                       &lt;ul class="dropdown-menu">
+                           &lt;li>
+                               &lt;div class="yamm-content">
+                                   &lt;h4>Sunny Daycare Programs&lt;/h4>
+                                   &lt;div class="table text-center programs">
+                                       &lt;div class="table-cell">
+                                           &lt;a href="program.html">
+                                                &lt;span class="icon">
+                                                    &lt;img src="../assets/images/infant.png" alt="">
+                                                &lt;/span>
+                                                &lt;span class="program-title">
+                                                    &lt;strong>Infant Program&lt;br>
+                                                        10 - 18 months&lt;/strong>
+                                                &lt;/span>
+                                           &lt;/a>
+                                       &lt;/div>
+                                       &lt;div class="table-cell">
+                                           &lt;a href="program.html">
+                                                &lt;span class="icon">
+                                                    &lt;img src="../assets/images/toddler.png" alt="">
+                                                &lt;/span>
+                                                &lt;span class="program-title">
+                                                    &lt;strong>Toddler Program&lt;br>
+                                                        18 - 30 months&lt;/strong>
+                                                &lt;/span>
+                                           &lt;/a>
+                                       &lt;/div>
+                                       &lt;div class="table-cell">
+                                           &lt;a href="program.html">
+                                                &lt;span class="icon">
+                                                    &lt;img src="../assets/images/preschool.png" alt="">
+                                                &lt;/span>
+                                                &lt;span class="program-title">
+                                                    &lt;strong>Preschool Program&lt;br>
+                                                        2.5 - 4 years&lt;/strong>
+                                                &lt;/span>
+                                           &lt;/a>
+                                       &lt;/div>
+                                       &lt;div class="table-cell">
+                                           &lt;a href="program.html">
+                                                &lt;span class="icon">
+                                                    &lt;img src="../assets/images/summercamp.png" alt="">
+                                                &lt;/span>
+                                                &lt;span class="program-title">
+                                                    &lt;strong>Summer Camp&lt;br>
+                                                        all ages&lt;/strong>
+                                                &lt;/span>
+                                           &lt;/a>
+                                       &lt;/div>
+                                       &lt;div class="table-cell">
+                                           &lt;a href="program.html">
+                                                &lt;span class="icon">
+                                                    &lt;img src="../assets/images/holidaycamp.png" alt="">
+                                                &lt;/span>
+                                                &lt;span class="program-title">
+                                                    &lt;strong>Holiday Camp&lt;br>
+                                                        all ages&lt;/strong>
+                                                &lt;/span>
+                                           &lt;/a>
+                                       &lt;/div>
+                                   &lt;/div>
+                               &lt;/div>
+                           &lt;/li>
+                       &lt;/ul>
+                   &lt;/li>
+                   &lt;li class="dropdown">
+                       &lt;a href="activities.html" class="dropdown-toggle" data-toggle="dropdown">Pages&lt;/a>
+                       &lt;ul class="dropdown-menu">
+                           &lt;li>&lt;a href="programs.html">Programs&lt;/a>&lt;/li>
+                           &lt;li>&lt;a href="activities.html">Activities Index&lt;/a>&lt;/li>
+                           &lt;li>&lt;a href="activity.html">Activity Single&lt;/a>&lt;/li>
+                           &lt;li>&lt;a href="nutritions.html">Nutritions&lt;/a>&lt;/li>
+                           &lt;li>&lt;a href="admissions.html">Admissions&lt;/a>&lt;/li>
+                       &lt;/ul>
+                   &lt;/li>
+                   &lt;li class="dropdown">
+                       &lt;a href="gallery.html" class="dropdown-toggle" data-toggle="dropdown">Gallery&lt;/a>
+                       &lt;ul class="dropdown-menu">
+                           &lt;li>&lt;a href="gallery.html">Gallery&lt;/a>&lt;/li>
+                           &lt;li>&lt;a href="gallerysingle.html">Gallery Single&lt;/a>&lt;/li>
+                       &lt;/ul>
+                   &lt;/li>
+                   &lt;li>&lt;a href="blog.html">Blog&lt;/a>&lt;/li>
+                   &lt;li>&lt;a href="contact.html">Contact&lt;/a>&lt;/li>
+               &lt;/ul>
+           &lt;/div>&lt;!-- /.navbar-collapse -->
+       &lt;/div>&lt;!-- /.container-fluid -->
+   &lt;/nav>
+ </pre>
+
+We are using the Yamm Megamenu extension to allow the creation of big menu dropdowns. Read more about it <a href="http://geedmo.github.io/yamm/" target="_blank">here</a>
+
+
+<h5>Mobile Menu</h5>
+
+<p>Mobile menu will display on viewport width < 979px. </p>
+
+
+<h5>Grid System and Single row structure</h5>
+
+<p>The default Bootstrap grid system utilizes 12 columns. It's responsive grid and adapts to viewport. Below 767px viewports, the columns become fluid and stack vertically. The fluid grid system uses percents instead
+    of pixels for column widths. Each row always include 12 columns (for example col-md-8 + col-md-4 = col-md-12).<br>
+    Bootstrap documentation: <a href="http://getbootstrap.com/">here</a><br><br>
+    Basic fluid grid HTML:</p>
+
+
+<pre class="brush: html">
+
+    &lt;div class="row">
+      &lt;div class="col-md-4">
+          &lt;div class="row">
+              &lt;div class="col-md-6">&lt;/div>
+              &lt;div class="col-md-6">&lt;/div>
+          &lt;/div>
+      &lt;/div>
+      &lt;div class="col-md-8">&lt;/div>
+    &lt;/div>
+
+</pre>
+
+
+<h5>Flavours</h5>
+
+<p>There are three flavours available with your purchase.<br>
+    Use the HTML files inside "default", "grass" or "desert" to build your website.</p>
+<p>If you change the folder structure make sure you update the file paths inside each HTML file.</p>
+<br><br>
+
+<h5>Page structure</h5>
+
+    <pre class="brush: html">
+      &lt;!DOCTYPE html>
+      &lt;html>
+      &lt;head>
+        [meta_tags]
+        [css]
+      &lt;/head>
+     &lt;body class="withAnimation">
+
+     [viewport for mouse movement effects]
+
+     &lt;header>
+         [navigation]
+     &lt;/header>
+
+     &lt;div class="container">&lt;/div>
+
+      [full width section]
+
+     &lt;div class="container">&lt;/div>
+
+     &lt;div class="container">
+     &lt;div class="row">
+     &lt;div class="col-md-9">
+         &lt;div class="shadow-box">
+            [main content]
+         &lt;/div>
+     &lt;/div>
+     &lt;div class="col-md-3 sidebar"> <!-- Start of sidebar -->
+         &lt;div class="row">
+             &lt;div class="col-sm-6 col-md-12">
+                 &lt;div class="shadow-box daycare-widget">
+                     [widget]
+                 &lt;/div>
+             &lt;/div>
+         &lt;/div>
+     &lt;/div>
+     &lt;/div>
+
+      [socials]
+
+     &lt;/div>
+
+     &lt;div class="container">&lt;/div>
+
+     [flavour footer images]
+
+     &lt;div class="container">&lt;/div>
+
+     [footer]
+
+     [scripts]
+     &lt;/body>
+      &lt;/html>
+    </pre>
+
+
+<h5>Custom lists</h5>
+
+<p>You can use every icon available in fontawesome. <br>
+    Usage should be like this:
+</p>
+
+<pre class="brush: html">
+    &lt;i class="fa fa-icon-name">&lt;/i>
+</pre>
+
+    <h5>Icons</h5>
+
+    <p>
+      We add 300+ Awesome Icons - <a href="http://fontawesome.io/icons/">http://fontawesome.io/icons/</a>
+
+      <br>
+      Class should be as follow: "fa fa-icon-name", for example :
+    </p>
+
+<pre class="brush: html">
+  &lt;i class="fa fa-user">&lt;/i>
+  &lt;i class="fa fa-book">&lt;/i>
+  &lt;i class="fa fa-comments">&lt;/i>
+</pre>
+
+  <p>
+    <img src="img/content/awesome-icons.jpg" alt=" ">
+  </p>
+
+
+</div>
+<!-- / subChapter -->
+</section>
+
+
+<section id="css_files_structure">
+    <h3>CSS Files & Structure</h3>
+    <hr class="notop">
+    <p>Bootstrap CSS Framework v3.1.1</li></p>
+    <p>Main style.css includes : </p>
+
+    <div class="subChapter">
+
+
+        <ol>
+            <li>Bootstrap</li>
+            <li>Yamm Menu</li>
+            <li>General Styles
+                <ul style="margin:0;">
+                    <li>graphic elements</li>
+                    <li>buttons</li>
+                    <li>lists</li>
+                    <li>alerts</li>
+                    <li>navbar</li>
+                    <li>typography</li>
+                    <li>breadcrumbs</li>
+                    <li>forms</li>
+                    <li>pagination</li>
+                    <li>general page styles</li>
+                    <li>info block</li>
+                    <li>twitter</li>
+                    <li>image/person box</li>
+                    <li>socials</li>
+                    <li>accordion</li>
+                    <li>tables</li>
+                    <li>popover & tooltip</li>
+                    <li>tabs</li>
+                    <li>flexslider</li>
+                    <li>calendar</li>
+                    <li>datepicker</li>
+                    <li>image gallery</li>
+                    <li>magnific popup</li>
+                    <li>helpers</li>
+                    <li>media queries, adjustments
+                        <ul style="margin:0;">
+                            <li>@media (max-width: 1020px) {}</li>
+                            <li>@media (max-width: 979px){}</li>
+                            <li>@media (max-width: 767px) {}</li>
+                            <li>@media (max-width: 480px) {}</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+
+
+        If you want to modify or add new styles please find this lines in <strong>style.css</strong> :
+        <br><br>
+        /** START EDIT HERE **/<br>
+        <br>
+        Below you can add your code.<br><br>
+
+        We have 2 different css files for each flavour. style.css has the general styles, the second one contains the color styles for each flavour.
+
+    </div>
+</section>
+
+
+<section id="java_script">
+<h3>Javascript</h3>
+<hr class="notop">
+
+
+<p>All javascripts are placed in folder /js. In main.js file we implement all functions calls.<br>
+    This theme uses following Javascript files:</p>
+
+<ol>
+    <li>Bootstrap v3.1.1 framework (powerful front-end framework for faster and easier web development)</li>
+    <li>jQuery 1.9.1 (A fast javascript library that simplifies how to traverse HTML documents, handle events, perform animations.)</li>
+    <li>FlexSlider</li>
+    <li>FullCalendar (plugin that provides a full-sized, drag & drop calendar)</li>
+    <li>hoverIntent</li>
+    <li>infinitescroll</li>
+    <li>Appear.js (jQuery plugin for tracking element's appearance in browser viewport)</li>
+    <li>fitVids (jQuery plugin for responsive videos)</li>
+    <li>magnific popup</li>
+    <li>parallax.js</li>
+    <li>spritely.js</li>
+    <li>masonry.js</li>
+    <li>packery.js</li>
+</ol>
+
+
+<div class="subChapter">
+
+<h3>Flexslider</h3>
+
+<p>
+    Content / Images Slider.<br>
+    Each parameter can be defined as data attribute :
+</p>
+<ul>
+    <li>data-height="560"</li>
+    <li>data-direction="horizontal"</li>
+    <li>data-animation="fade"</li>
+    <li>data-loop="true"</li>
+    <li>data-smooth="false"</li>
+    <li>data-slideshow="true"</li>
+    <li>data-speed="15000"</li>
+    <li>data-animspeed="550"</li>
+    <li>data-controls="true"</li>
+    <li>data-dircontrols="true"</li>
+</ul>
+<p>
+    Elements in slider content can be animated, just add "animated" class to element and data-fx="type-of-animation".<br>
+    Available animations : <a href="http://daneden.github.io/animate.css/">http://daneden.github.io/animate.css/</a>
+</p>
+
+<p>
+    Documentation: <a href="http://www.woothemes.com/flexslider/">plugin homepage</a>
+</p>
+
+You can use the following atributes to ajust objects inside the slider:
+
+<ol>
+    <li>data-top</li>
+    <li>data-bottom</li>
+    <li>data-left</li>
+    <li>data-right</li>
+</ol>
+
+<p> This is HTML markup we use:</p>
+
+   <pre class="brush: html">
+     &lt;section class="flexslider std-slider" data-height="300" data-direction="horizontal" data-animation="fade" data-loop="true" data-smooth="false" data-slideshow="true" data-speed="25000" data-animspeed="550" data-controls="false" data-dircontrols="true">
+         &lt;div class="container">
+             &lt;ul class="slides">
+                 &lt;li>
+                     &lt;div class="inner">
+                         &lt;div class="object animated absolute" data-left="100px" data-bottom="0px" data-fx="bounceInLeft">
+                             &lt;img src="../assets/images/pencils.png" alt="Pencils">
+                         &lt;/div>
+                         &lt;div class="object animated absolute" data-right="150px" data-fx="bounceInDown">
+                             &lt;img src="../assets/images/demo-content/text1.png" alt="Our 6th annual Sunny art contest">
+                         &lt;/div>
+                         &lt;div class="object animated absolute" data-right="140px" data-bottom="40px" data-fx="flipInY">
+                             &lt;a href="#">see all contest entries here &lt;i class="fa fa-chevron-right">&lt;/i> &lt;/a>
+                         &lt;/div>
+                     &lt;/div>
+                 &lt;/li>
+                 &lt;li>
+                     &lt;div class="inner">
+                         &lt;div class="object animated absolute" data-left="100px" data-bottom="-43px" data-fx="bounceInLeft">
+                             &lt;img src="../assets/images/demo-content/girlslider2.png" alt="Little Girl">
+                         &lt;/div>
+                         &lt;div class="object animated absolute" data-right="120px" data-top="50px" data-fx="bounceInDown">
+                             &lt;img src="../assets/images/demo-content/text2.png" alt="Sunndy Daycare, World's Sunniest Spot">
+                         &lt;/div>
+                         &lt;div class="object animated absolute" data-right="310px" data-bottom="90px" data-fx="flipInY">
+                             &lt;a href="#">see why &lt;i class="fa fa-chevron-right">&lt;/i> &lt;/a>
+                         &lt;/div>
+                     &lt;/div>
+                 &lt;/li>
+                 &lt;li>
+                     &lt;div class="inner">
+                         &lt;div class="object animated absolute" data-left="100px" data-bottom="-43px" data-fx="fadeInUp">
+                             &lt;img src="../assets/images/demo-content/vegslider3.png" alt="Vegetables">
+                         &lt;/div>
+                         &lt;div class="object animated absolute" data-right="220px" data-top="50px" data-fx="bounceInDown">
+                             &lt;img src="../assets/images/demo-content/text3.png" alt="Learn about our new sunny menu here">
+                         &lt;/div>
+                         &lt;div class="object animated absolute" data-right="210px" data-bottom="60px" data-fx="flipInY">
+                             &lt;a href="#">see this week menu here &lt;i class="fa fa-chevron-right">&lt;/i> &lt;/a>
+                         &lt;/div>
+                     &lt;/div>
+                 &lt;/li>
+             &lt;/ul>
+         &lt;/div>
+     &lt;/section>
+   </pre>
+
+<p>and js:</p>
+
+<pre class="brush: javascript">
+
+  /* ============================ */
+        /* ==== FLEXSLIDER CONTENT ==== */
+
+        jQuery(".flexslider.std-slider .object").each(function (){
+            var $this = jQuery(this);
+            if($this.hasClass("absolute")){
+                $this.css({
+                    "top": $this.data("top"),
+                    "bottom": $this.data("bottom"),
+                    "left": $this.data("left"),
+                    "right": $this.data("right")
+                });
+            } else {
+                $this.css({
+                    "margin-top": $this.data("top"),
+                    "margin-bottom": $this.data("bottom"),
+                    "margin-left": $this.data("left"),
+                    "margin-right": $this.data("right")
+                });
+            }
+        })
+
+
+
+        /* ==================================== */
+        /* ==== FLEXSLIDER WITH ANIMATIONS ==== */
+
+        if (jQuery(".flexslider.std-slider").length > 0) {
+
+            $('.flexslider.std-slider').each(function () {
+                var $this = jQuery(this);
+                $this.find(".slides > li .inner").each(function () {
+                    var $container = jQuery(this);
+                    $container.css('min-height', $this.attr('data-height') + "px");
+                })
+                // initialize
+                $this.find(".slides > li").each(function () {
+                    var $slide_item = $(this);
+                    var bg = validatedata($slide_item.data('bg'), false);
+                    if (bg) {
+                        $slide_item.css('background-image', 'url("' + bg + '")');
+                    }
+                    $slide_item.css('min-height', $this.attr('data-height') + "px");
+
+                    // hide slider content due to fade animation
+                    //$slide_item.find(".inner").hide();
+                    /*
+                     $slide_item.find(".inner [data-fx]").each(function () {
+                     $(this).removeClass("animated");
+                     })
+                     */
+                    $slide_item.find('.inner').fadeOut("slow");
+                })
+
+                var direction = validatedata($this.attr('data-direction'), "horizontal");
+                var animation = validatedata($this.attr('data-animation'), "fade");
+                var loop = validatedata(parseBoolean($this.attr("data-loop")), false);
+                var smooth = validatedata(parseBoolean($this.attr("data-smooth")), false);
+                var slideshow = validatedata(parseBoolean($this.attr("data-slideshow")), false);
+                var speed = validatedata(parseInt($this.attr('data-speed')), 7000);
+                var animspeed = validatedata(parseInt($this.attr("data-animspeed")), 600);
+                var controls = validatedata(parseBoolean($this.attr('data-controls')), false);
+                var dircontrols = validatedata(parseBoolean($this.attr('data-dircontrols')), false);
+
+                $this.flexslider({
+                    direction: direction,        //String: Select the sliding direction, "horizontal" or "vertical"
+                    animation: animation,              //String: Select your animation type, "fade" or "slide"
+                    animationLoop: loop,             //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+                    smoothHeight: smooth,            //{NEW} Boolean: Allow height of the slider to animate smoothly in horizontal mode
+                    slideshow: slideshow,                //Boolean: Animate slider automatically
+                    slideshowSpeed: speed,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+                    animationSpeed: animspeed,            //Integer: Set the speed of animations, in milliseconds
+                    touch: false,
+
+                    // Primary Controls
+                    controlNav: controls,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+                    directionNav: dircontrols,             //Boolean: Create navigation for previous/next navigation? (true/false)
+                    manualControls: ".flex-control-nav li",
+
+                    pauseOnHover: true,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+                    prevText: " ",           //String: Set the text for the "previous" directionNav item
+                    nextText: " ",
+                    useCSS: false,
+
+                    // Callback API
+                    start: function () {
+                        $this.removeClass("loading-slider");
+
+                        setTimeout(function () {
+                            $this.find(".slides > li.flex-active-slide .inner").fadeIn("slow");
+                        }, 650);
+
+                    },
+                    before: function () {
+
+                        $this.find(".slides > li .inner").fadeOut("slow");
+                    },           //Callback: function(slider) - Fires asynchronously with each slider animation
+                    after: function () {
+                        setTimeout(function () {
+                            $this.find(".slides > li.flex-active-slide .inner").fadeIn("slow");
+                        }, 150);
+                    },            //Callback: function(slider) - Fires after each slider animation completes
+                    end: function () {
+                    },              //Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)
+                    added: function () {
+                    },            //{NEW} Callback: function(slider) - Fires after a slide is added
+                    removed: function () {
+                    }           //{NEW} Callback: function(slider) - Fires after a slide is removed
+                });
+            });
+        }
+    }
+</pre>
+
+
+<h3>FullCalendar</h3>
+
+<p>FullCalendar is a jQuery plugin that provides a full-sized, drag & drop calendar like the one below. It uses AJAX to fetch events on-the-fly for each month and is easily configured to use your own feed format (an extension is provided for Google Calendar). It is visually customizable and exposes hooks for user-triggered events (like clicking or dragging an event). It is open source licensed under an MIT license.</p>
+<p>You can check the official documentation here: <a href="http://arshaw.com/fullcalendar/">http://arshaw.com/fullcalendar/</a> </p>
+
+<p>In order to configure Google Calendar read this documentation: <a href="http://arshaw.com/fullcalendar/docs/google_calendar/">http://arshaw.com/fullcalendar/docs/google_calendar/</a> </p>
+
+<p>This is HTML markup we use:</p>
+
+
+   <pre class="brush: html">
+       &lt;div id="calendar" class="calendar">&lt;/div>
+   </pre>
+
+<p>and js:</p>
+
+   <pre class="brush: javascript">
+       jQuery(document).ready(function() {
+    var date = new Date();
+
+    jQuery('#calendar').fullCalendar({
+        header: {
+            left: 'title',
+            right: 'prev, today, next'
+        },
+        defaultView: 'basicDay',
+        buttonText: {
+            prev: '<i class="fa fa-chevron-left"></i>',
+            next: '<i class="fa fa-chevron-right"></i>',
+            today: 'TODAY'
+        },
+        handleWindowResize: true,
+        agendaDay: {
+            allDayText: ''
+        },
+        // for agendaWeek and agendaDay
+        editable: false,
+        // US Holidays
+        events: 'http://www.google.com/calendar/feeds/usa__en%40holiday.calendar.google.com/public/basic',
+
+        timeFormat: 'hh:mm( - hh:mm) tt', // uppercase H for 24-hour clock
+        eventClick: function(event) {
+            // opens events in a popup window
+            window.open(event.url, 'gcalevent', 'width=700,height=600');
+            return false;
+        }
+    });
+
+});
+   </pre>
+
+<h3>Magnific Popup</h3>
+
+<p>Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device<br>
+    You can read more about it here: <a href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a> </p>
+
+
+<p>This is HTML markup we use:</p>
+
+
+   <pre class="brush: html">
+       &lt;a class="popup" data-type="image" href="../assets/images/demo-content/gallery/cc.jpg" title="&lt;strong>Lorem ipsum dore&lt;/strong> Lorem ipsum dolor sit amet, consecteh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.">
+           &lt;img src="../assets/images/demo-content/gallery/cc-sm.jpg" alt="Image" class="fit-image">
+       &lt;/a>
+   </pre>
+
+<p>and js:</p>
+
+   <pre class="brush: javascript">
+       /* ==================== */
+    /* ==== MAGNIFIC POPUP ==== */
+
+    if(jQuery().magnificPopup){
+        jQuery('.gallery').each(function() { // the containers for all your galleries
+            jQuery(this).magnificPopup({
+                type: 'image',
+                delegate: '.popup',
+                closeOnContentClick: true,
+                closeBtnInside: false,
+                fixedContentPos: true,
+                mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+                image: {
+                    verticalFit: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300 // don't foget to change the duration also in CSS
+                },
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                },
+                closeBtnInside: true,
+                closeMarkup:'<button title="%title%" class="mfp-close"><i class="fa fa-times"></i></button>',
+                callbacks: {
+
+                    buildControls: function() {
+                        // re-appends controls inside the main container
+                        this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+                    }
+
+                }
+            });
+        });
+
+    }
+   </pre>
+
+<h3>Tooltips</h3>
+
+<p>It's tooltip from bootstrap. You can add nice tooltip bubble show on link hover.<br>
+    We use this effect with social icons, but you can add tooltip to any link.</p>
+
+
+<p>This is HTML markup we use:</p>
+
+
+   <pre class="brush: html">
+       &lt;ul class="smallSocials">
+           &lt;li>&lt;a href="#" target="_blank" class="icon-phone-sign" data-toggle="tooltip" title="Phone">Phone&lt;/a>&lt;/li>
+           &lt;li>&lt;a href="#" target="_blank" class="icon-facebook-sign" data-toggle="tooltip" title="Facebook">Facebook&lt;/a>&lt;/li>
+           &lt;li>&lt;a href="#" target="_blank" class="icon-twitter-sign" data-toggle="tooltip" title="Twitter">Twitter&lt;/a>&lt;/li>
+           &lt;li>&lt;a href="#" target="_blank" class="icon-github-alt" data-toggle="tooltip" title="GitHub">GitHub&lt;/a>&lt;/li>
+           &lt;li>&lt;a href="#" target="_blank" class="icon-linkedin-sign" data-toggle="tooltip" title="LinkedIn">LinkedIn&lt;/a>&lt;/li>
+           &lt;li>&lt;a href="#" target="_blank" class="icon-pinterest-sign" data-toggle="tooltip" title="Pinterest">Pinterest&lt;/a>&lt;/li>
+           &lt;li>&lt;a href="#" target="_blank" class="icon-google-plus-sign" data-toggle="tooltip" title="Google+">Google+&lt;/a>&lt;/li>
+           &lt;li>&lt;a href="#" target="_blank" class="icon-envelope-alt" data-toggle="tooltip" title="E-mail">E-mail&lt;/a>&lt;/li>
+       &lt;/ul>
+   </pre>
+
+<p>and js:</p>
+
+   <pre class="brush: javascript">
+       function tooltipInit() {
+           jQuery("[data-toggle='tooltip']").tooltip();
+       }
+   </pre>
+
+<h3>Popovers</h3>
+
+<p>It's popovers from bootstrap. You can add nice popover bubble show on link hover.<br>
+    We use this effect with menu snacks, but you can add popovers to any link.</p>
+
+<p>You can use any kind of HTMl inside data-content attribute</p>
+
+<p>This is HTML markup we use:</p>
+
+
+   <pre class="brush: html">
+        <span  data-toggle="popover" data-placement="left" data-title="Pancakes" data-content="<img src='../assets/images/demo-content/pancakes.png'/> Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Pancakes</span> &<br>
+        <span  data-toggle="popover" data-placement="left" data-title="Pancakes" data-content="<img src='../assets/images/demo-content/pancakes.png'/> Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Fruit Purée</span><br>
+        <span  data-toggle="popover" data-placement="left" data-title="Pancakes" data-content="<img src='../assets/images/demo-content/pancakes.png'/> Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Fruit</span><br>
+        <span  data-toggle="popover" data-placement="left" data-title="Pancakes" data-content="<img src='../assets/images/demo-content/pancakes.png'/> Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Milk</span>
+   </pre>
+
+<p>and js:</p>
+
+   <pre class="brush: javascript">
+       jQuery("[data-toggle='popover']").popover({ trigger: "hover", html : true});
+   </pre>
+
+
+<h3>Other Dependencies</h3>
+
+<p>Bellow are the oficial documentation of some of the other plugins we used. You probably won't need to change anything there, but if you want to, take your time to read what can be done.<br>
+    We use this effect with social icons, but you can add tooltip to any link.</p>
+
+<ol>
+    <li>http://spritely.net/ (plugin used to animate the waves in default flavour. You can also use it so make images behave as a gif.)</li>
+    <li>http://stephband.info/jparallax/ (plugin used to animate the clouds on mouse movement)</li>
+    <li>http://stephband.info/jparallax/ (plugin used to animate the clouds on mouse movement)</li>
+    <li>http://eternicode.github.io/bootstrap-datepicker/ Datepicker used on forms</li>
+    <li>http://masonry.desandro.com/ (Only used on small devices - tablets mostly - to ajust the sidebar widgets)</li>
+</ol>
+
+
+<br><br>
+
+
+</div>
+<!-- / subChapter -->
+
+</section>
+<section id="typography">
+    <h3>Typography</h3>
+    <hr class="notop">
+
+    <p>In this theme we use:</p>
+
+    <p><strong>Arial</strong> font<br>
+        <strong>Source Sans Pro</strong> font
+    </p>
+</section>
+
+<section id="contact_form"><h3>Contact Form / Newsletter</h3>
+  <hr class="notop">
+
+  <p>Template comes with ready to use: <br>
+    <ul>
+      <li>Contact Form</li>
+      <li>Newsletter Form</li>
+    </ul>
+
+  <p>
+    All needed files are in /form directory.<br>
+    Remember to include &lt;script src="form/js/contact-form.js">&lt;/script> on page.<br>
+    To <strong>configure</strong> form just edit form/config.php and change e-mails to your own :
+  </p>
+
+  <pre class="brush: html">
+    $to = "mail@example.com";
+    $from = "mail@example.com";
+  </pre>
+
+  <p>That's it!</p>
+
+  <p>Options (can be changed in HTML) : </p>
+  <ul>
+    <li><strong>Mail Subject</strong> - just change value in : &lt;input type="hidden" name="msg_subject" value="Contact Form"></li>
+    <li><strong>Success Message</strong> - change alert-success div content (at the form bototm)</li>
+    <li><strong>Error Message</strong> - change alert-error div content (at the form bottom)</li>
+  </ul>
+
+  <p><strong>How to add more fields to form ?</strong></p>
+  <p>Just add another input field,<br>
+    for example additional phone and fax : </p>
+
+  <pre class="brush: html">
+    &lt;input required name="field_[]" type="text" placeholder="Phone 2">
+    &lt;input required name="field_[]" type="text" placeholder="Fax">
+  </pre>
+
+  <p>Contact Form HTML Markup:</p>
+
+  <pre class="brush: html">
+    &lt;form action="form/form.php" method="post" class="contactForm ajax-form">
+      &lt;fieldset>
+        &lt;div class="row">
+          &lt;div class="col-md-4">
+            &lt;input required name="field_[]" type="text" placeholder="Name*">
+          &lt;/div>
+          &lt;div class="col-md-4">
+            &lt;input required name="email" type="email" placeholder="E-mail*">
+          &lt;/div>
+          &lt;div class="col-md-4">
+            &lt;input required name="field_[]" type="text" placeholder="Phone">
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="row">
+          &lt;div class="col-md-12">
+            &lt;textarea required name="field_[]" placeholder="How can we help you?*">&lt;/textarea>
+            &lt;input type="hidden" name="msg_subject" value="Contact Form">
+            &lt;input type="submit" value="Send Message" class="pull-right">
+          &lt;/div>
+        &lt;/div>
+      &lt;/fieldset>
+      &lt;div class="alert alert-success" style="display:none;">
+        Message has been sent successfully!
+      &lt;/div>
+      &lt;div class="alert alert-error" style="display:none;">
+        An error occurred, please try again later.
+      &lt;/div>
+    &lt;/form>
+  </pre>
+
+  <p>Newsletter Form HTML Markup:</p>
+
+  <pre class="brush: html">
+    &lt;form action="form/form.php" method="post" class="newsletterForm ajax-form">
+      &lt;fieldset>
+        &lt;input type="text" required name="email" placeholder="Email address ...">
+        &lt;input type="hidden" name="msg_subject" value="Newsletter Form">
+        &lt;input type="submit" value="Sign In">
+      &lt;/fieldset>
+      &lt;div class="alert alert-success" style="display:none;">
+         Message has been sent successfully!
+      &lt;/div>
+      &lt;div class="alert alert-error" style="display:none;">
+        An error occurred, please try again later.
+      &lt;/div>
+    &lt;/form>
+  </pre>
+
+</section>
+
+
+
+<section id="twitter"><h3>Twitter Feed</h3>
+  <hr class="notop">
+
+  <p>This is live twitter feed. This plugin will grab your latest tweets and displated it on page.
+  <br>
+  <strong>Configuration: </strong> - just edit twitter/config.php file :
+  </p>
+
+  <pre class="brush: html">
+  $config = array(
+  	'username' => "XXX", //username
+  	'limit' => 3, //how many tweets we would like to display?
+  	'with_replies' => true, //show replies? true or false
+  	'oauth_access_token' => 'TOKEN',
+  	'oauth_access_token_secret' => 'TOKEN_SECRET',
+  	'consumer_key' => 'KEY',
+  	'consumer_secret' => 'KEY_SECRET',
+  );
+  </pre>
+
+  <p><strong>Where can I get these keys, tokens, etc ?</strong></p>
+
+  <p>
+  Twitter API requires authentication to display tweets from your account.<br>
+  To twiiter feed work you need to create the 'application'<br>
+  and generate 4 special keys for your twitter account via <a href="https://dev.twitter.com/apps">https://dev.twitter.com/apps</a> :<br>
+  - Consumer key (key)<br>
+  - Consumer secret (secret)<br>
+  - Access token (token)<br>
+  - Access token secret (token_secret)<br>
+  </p>
+
+  <p>Video tutorial : "How to create Twitter App" <br>
+  <a href="http://vimeo.com/60891535">http://vimeo.com/60891535</a>
+  </p>
+
+</section>
+
+<section id="sources_credits">
+    <h3>Sources & Credits</h3>
+    <hr class="notop">
+
+    <p>The following sources and files have been used to build up this theme</p>
+
+    <ul>
+        <li>Twitter Bootstrap - <a href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+        <li>jQuery - <a href="http://www.jquery.com">http://www.jquery.com</a></li>
+        <li>Magnific Popup - <a href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a></li>
+        <li>Flexslider - <a href="http://www.woothemes.com/flexslider/">http://www.woothemes.com/flexslider/</a></li>
+        <li>jparallax - <a href="http://stephband.info/jparallax/">http://stephband.info/jparallax/</a></li>
+        <li>Datepicker for bootstrap - <a href="http://eternicode.github.io/bootstrap-datepicker/">http://eternicode.github.io/bootstrap-datepicker/</a></li>
+        <li>FullCalendar - <a href="http://arshaw.com/fullcalendar/">http://arshaw.com/fullcalendar/</a></li>
+        <li>Masonry - <a href="http://masonry.desandro.com/">http://masonry.desandro.com/</a></li>
+        <li>fitVids - <a href="http://fitvidsjs.com/">http://fitvidsjs.com/</a></li>
+        <li>Packery - <a href="http://packery.metafizzy.co/">http://packery.metafizzy.co/</a></li>
+        <li>gmap3 - <a href="http://gmap3.net/">http://gmap3.net/</a></li>
+    </ul>
+    <br><br>
+
+    <p>
+        Once again, thank you so much for purchasing this theme.
+        If you have any questions, feel free to email me via my user page contact form.
+
+    </p>
+
+</section>
+
+
+</div>
+
+<script type="text/javascript" src="syntaxh/js/shCore.js"></script>
+<script type="text/javascript" src="syntaxh/js/shBrushJScript.js"></script>
+<script type="text/javascript" src="syntaxh/js/shBrushCss.js"></script>
+<script type="text/javascript" src="syntaxh/js/shBrushXml.js"></script>
+
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+</body>
+</html>
