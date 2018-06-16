@@ -1718,7 +1718,7 @@ var Popover = Class.extend({
 			left = 0;
 		}
 
-		if (viewportEl.is(window) || viewportEl.is(document)) { // normalize getScrollParent's result
+		if (viewportEl.is(window) || viewportEl.is(document)) { // normalize getScrollParents' result
 			viewportEl = windowEl;
 			viewportTop = 0; // the window is always at the top left
 			viewportLeft = 0; // (and .offset() won't work if called here)
